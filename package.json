@@ -1,0 +1,19 @@
+{
+  "name": "eggbay",
+  "version": "0.1.0",
+  "description": "fertile eggs marketplace",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vecchiotom/eggbay.git"
+  },
+  "author": "IceHax",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/vecchiotom/eggbay/issues"
+  },
+  "homepage": "https://github.com/vecchiotom/eggbay#readme"
+}

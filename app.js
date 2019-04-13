@@ -10,4 +10,9 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 
+//web crawler
+app.get('/wakemydyno.txt', function (req, res) {
+    res.send("hi bot")
+});
+
 app.listen(port);

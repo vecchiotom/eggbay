@@ -2,11 +2,11 @@ var express = require('express');
 var app = express();
 var port = process.env.PORT || 80;
 var exphbs = require('express-handlebars')
+var http = require("http");
 
-//start self pinger
-var success = require('heroku-self-ping')("http://eggbay.herokuapp.com");
-console.warn('logger started, returned ' + success)
-
+setInterval(function() {
+    http.get("http://eggbay.herokuapp.com");
+}, 300000); // ping every 5 minutes (300000)
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');

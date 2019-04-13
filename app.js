@@ -4,8 +4,10 @@ var port = process.env.PORT || 80;
 var exphbs = require('express-handlebars')
 
 //start self pinger
-require('heroku-self-ping')("http://eggbay.herokuapp.com");
- 
+var success = require('heroku-self-ping')("http://eggbay.herokuapp.com");
+console.warn('logger started, returned ' + success)
+
+
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
  

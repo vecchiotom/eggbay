@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/vecchiotom/eggbay/issues"
   },
-  "homepage": "https://github.com/vecchiotom/eggbay#readme"
+  "homepage": "https://github.com/vecchiotom/eggbay#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
